@@ -1,0 +1,25 @@
+.priyanka {
+    position: absolute;
+    width: 25%;
+}
+
+.raj {
+    margin-right: 2rem;
+    overflow: hidden;
+}
+
+.about {
+    font-size: 1.25rem;
+}
+
+.about-container {
+    overflow: hidden;
+}
+
+.no-flex-here {
+    flex: none;
+}
+
+.bold{
+    font-weight: bold;
+}
