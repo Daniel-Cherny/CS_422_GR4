@@ -34,6 +34,7 @@ header {
 
 .card {
     margin-top: 6rem;
+    opacity: .9;
 }
 
 .card-title {
