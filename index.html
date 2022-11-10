@@ -7,9 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeChef</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 
     <script src="https://kit.fontawesome.com/e78db3f672.js" crossorigin="anonymous"></script>
 
@@ -29,66 +40,157 @@
             <div class="input-group">
                 <button class="btn btn-secondary" type="button" id="button-addon1"><i
                         class="fa fa-map-marker"></i></button>
-                <input type="text" class="form-control" placeholder="Search">
+                <input type="text" class="form-control" placeholder="Chicago, IL">
             </div>
         </div>
     </header>
 
-    <div class="row">
-
-        <div class="card-container col-md-4">
-            <div class="card">
-                <img class="food-stock-image" src="food_stock_image.jpg" class="card-img-top" alt="food_image">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Christina</li>
-                    <li class="list-group-item">Signature Dish: Fettucine Alfredo</li>
-                    <li class="list-group-item">Previous Reservation: 03/27/2022</li>
-                </ul>
-                <div class="card-body">
-                    <button class="reserve-again btn btn-primary w-75">Reserve again</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-container col-md-4">
-            <div class="card">
-                <img class="food-stock-image" src="food_stock_image.jpg" class="card-img-top" alt="food_image">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Raj</li>
-                    <li class="list-group-item">Signature Dish: Butter Chicken</li>
-                    <li class="list-group-item">Previous Reservation: 02/15/2022</li>
-                </ul>
-                <div class="card-body">
-                    <button class="reserve-again btn btn-primary w-75">Reserve again</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-container col-md-4">
-            <div class="card">
-                <img class="food-stock-image" src="food_stock_image.jpg" class="card-img-top" alt="food_image">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Sam</li>
-                    <li class="list-group-item">Signature Dish: Eggplant Parmesan</li>
-                    <li class="list-group-item">Previous Reservation: 05/10/2022</li>
-                </ul>
-                <div class="card-body">
-                    <button class="reserve-again btn btn-primary w-75">Reserve again</button>
-                </div>
-            </div>
-        </div>
-
+    <div class="book-a-chef">
+        <a class="btn btn-success" href="chef_list_view.html" role="button">Book A Chef!</a>
     </div>
 
-    <!-- <div class="container">
-        <button class = "btn btn-secondary btn-block">Hire Chef</button>
-    </div> -->
 
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+            <div class="carousel-item active" id="raj">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="chef_stock_photo.JPG" alt="Generic placeholder image"
+                        class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
+                        <h5 class="card-title">Raj</h5>
+                        <h5 class="pricing">$50/hr</h5>
+                        <div class="ratings">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>    
+                        </div>
+                        <p class="card-text card-text-one">Cuisine: Indian</p>
+                        <p class="card-text">Signature Dishes: Butter Chicken, etc.</p>
+                        <p class="card-text">Cuisine: Indian</p>
+
+                        <a href="#" class="btn btn-primary reservation-button">Reserve Now!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="chef_stock_photo.JPG" alt="Generic placeholder image"
+                        class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
+                        <h5 class="card-title">Christina</h5>
+                        <h5 class="pricing">$75/hr</h5>
+                        <div class="ratings">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>    
+                        </div>
+                        <p class="card-text card-text-one">Cuisine: American</p>
+                        <p class="card-text">Signature Dishes: Pulled BBQ Pork</p>
+                        <p class="card-text">57 reviews</p>
+                        <a href="#" class="btn btn-primary reservation-button">Reserve Now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="chef_stock_photo.JPG" alt="Generic placeholder image"
+                        class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
+                        <h5 class="card-title">Monica</h5>
+                        <h5 class="pricing">$50/hr</h5>
+                        <div class="ratings">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>    
+                        </div>
+                        <p class="card-text card-text-one">Cuisine: Indian</p>
+                        <p class="card-text">Signature Dishes: Butter Chicken, etc.</p>
+                        <p class="card-text">Cuisine: Indian</p>
+                        <a href="#" class="btn btn-primary reservation-button">Reserve Now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="chef_stock_photo.JPG" alt="Generic placeholder image"
+                        class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
+                        <h5 class="card-title">Geovanni</h5>
+                        <h5 class="pricing">$50/hr</h5>
+                        <div class="ratings">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>    
+                        </div>
+                        <p class="card-text card-text-one">Cuisine: Indian</p>
+                        <p class="card-text">Signature Dishes: Butter Chicken, etc.</p>
+                        <p class="card-text">Cuisine: Indian</p>
+                        <a href="#" class="btn btn-primary reservation-button">Reserve Now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="chef_stock_photo.JPG" alt="Generic placeholder image"
+                        class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
+                        <h5 class="card-title">Lee</h5>
+                        <h5 class="pricing">$50/hr</h5>
+                        <div class="ratings">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>    
+                        </div>
+                        <p class="card-text card-text-one">Cuisine: Indian</p>
+                        <p class="card-text">Signature Dishes: Butter Chicken, etc.</p>
+                        <p class="card-text">Cuisine: Indian</p>
+                        <a href="#" class="btn btn-primary reservation-button">Reserve Now!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class = "footer-nav-container">
+        <ul class="nav justify-content-around footer-nav" id="navBar">
+            <li class="nav-item">
+                <div class="navItemCard">
+                    <a class="nav-link active" href="#"><i class="fa-sharp fa-solid fa-house fa-2xl caramel" id="navIcon"></i></a>
+                </div>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="bookings.html"><i class="fa-solid fa-book fa-2xl caramel"></i></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-gear fa-2xl caramel"></i></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="profile.html"><i class="fa-solid fa-user fa-2xl caramel"></i></a>
+            </li>
+        </ul>
+    </div>
+
 </body>
 
 </html>
