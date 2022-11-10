@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+}
+
+header {
+    background: #282c3f;
+    padding: 1.25rem;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.sort-and-filter {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.sort-button, .filter-button {
+    padding: 0.5rem 3rem;
+}
+
+
+.card {
+    margin-top: 3rem;
+}
+
+.card-title {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 4rem;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-body .ratings {
+    margin-left: auto;
+}
+
+.american-food-img {
+    width: 115%;
+}
+
+.chef-stock-image {
+    width: 20%;
+}
+
+.card-text-one {
+    margin-top: 1rem;
+}
+
+.card-text {
+    flex-basis: 100%;
+}
+
+.pricing {
+    position: absolute;
+    top: 23rem;
+    right: 2rem;
+}
+
+.reservation-button {
+    margin-top: 1rem;
+    flex-grow: 1;
+}
+
+/* give star ratings an orange color */
+.checked {
+    color: orange;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+background-color: rgb(75, 75, 89);
+overflow: hidden;
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+z-index: 100;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+background-color: #04AA6D;
+color: white;
+}
+
+.footer-nav {
+    margin-top: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    .card {
+        width: 40%;
+        margin: auto;
+        margin-top: 15rem;
+    }
+}
