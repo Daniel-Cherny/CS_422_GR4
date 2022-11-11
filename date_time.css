@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+}
+
+header {
+    background: #282c3f;
+    padding: 1.25rem;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.flex-child {
+    flex-basis: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-date-and-time {
+    font-weight: bold;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+
+.flex-time, .flex-date {
+    justify-content: space-evenly;
+}
+
+input, textarea {
+    border: 1px solid #000000bc;
+}
+
+.confirmation-button {
+    width: 90%;
+}
+
+#navBar a {
+    color: #282c3f;
+}
