@@ -2,11 +2,10 @@ html {
     box-sizing: border-box;
 }
 
-/* body {
-    background-color: #e6ddc5;
-    min-height: 100vh;
-    display: flex;
-} */
+body {
+    background: url("fire.jpg");
+    background-size: 90vh;
+}
 
 header {
     background: #282c3f;
