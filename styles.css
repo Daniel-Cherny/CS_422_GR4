@@ -25,11 +25,12 @@ header {
     width: 90%;
     margin: auto;
     margin-top: 12rem;
+    gap: 1rem;
 }
 
 .book-a-chef a {
     padding: 1rem 0;
-    flex-grow: 1;
+    flex-basis: 18rem;
 }
 
 .card {
@@ -90,6 +91,7 @@ header {
 
 .caramel {
     color: RGB(255,213,154);
+    background-color: #7c7f86;
 }
 
 @media (min-width: 768px) {
