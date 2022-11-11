@@ -78,6 +78,9 @@ header {
     color: orange;
 }
 
+#navBar a {
+    color: #282c3f;
+}
 
 @media (min-width: 768px) {
     .card {
