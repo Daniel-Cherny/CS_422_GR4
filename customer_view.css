@@ -78,6 +78,10 @@ header {
     color: orange;
 }
 
+#navBar {
+    margin-top: 2vh;
+}
+
 #navBar a {
     color: #282c3f;
 }
