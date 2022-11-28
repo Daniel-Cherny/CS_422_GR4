@@ -20,6 +20,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
     <script src="app.js"></script>
 
     <script src="https://kit.fontawesome.com/e78db3f672.js" crossorigin="anonymous"></script>
@@ -47,37 +48,39 @@
 
     <div class="sort-and-filter">
         <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle sort-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="btn btn-secondary dropdown-toggle sort-button" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-sort"></i> Sort
             </a>
-          
+
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Ratings (Low to High)</a>
-              <a class="dropdown-item" href="#">Price (Low to High)</a>
+                <a class="dropdown-item" href="#">Ratings (Low to High)</a>
+                <a class="dropdown-item" href="#">Price (Low to High)</a>
             </div>
-          </div>
-          <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle filter-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </div>
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle filter-button" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa-solid fa-filter"></i> Filter
             </a>
-          
+
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Cuisine</a>
-              <a class="dropdown-item" href="#">Rating</a>
+                <a class="dropdown-item" href="#">Indian</a>
+                <a class="dropdown-item" href="#">American</a>
             </div>
-          </div>
+        </div>
     </div>
 
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-bs-interval="false">
         <div class="carousel-inner">
 
-            <div class="carousel-item active" id="raj">
+            <div class="carousel-item active link" id="raj">
                 <div class="card">
                     <img class="card-img-top" src="food_stock_image.jpg" alt="Card image cap">
                     <div class="card-body">
                         <img src="chef_stock_photo.JPG" alt="Generic placeholder image"
-                        class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
+                            class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
                         <h5 class="card-title">Raj</h5>
                         <h5 class="pricing">$50/hr</h5>
                         <div class="ratings">
@@ -85,7 +88,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>    
+                            <span class="fa fa-star"></span>
                         </div>
                         <p class="card-text card-text-one">Cuisine: Indian</p>
                         <p class="card-text">Signature Dish: Biryani</p>
@@ -95,12 +98,13 @@
                 </div>
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item link">
                 <div class="card">
-                    <img class="card-img-top american-food-img" src="american_food_stock_image.jpg" alt="Card image cap">
+                    <img class="card-img-top american-food-img" src="american_food_stock_image.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <img src="chef_stock_photo.JPG" alt="Generic placeholder image"
-                        class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
+                            class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
                         <h5 class="card-title">Christina</h5>
                         <h5 class="pricing">$75/hr</h5>
                         <div class="ratings">
@@ -108,7 +112,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>    
+                            <span class="fa fa-star checked"></span>
                         </div>
                         <p class="card-text card-text-one">Cuisine: American</p>
                         <p class="card-text">Signature Dish: Philly Cheesesteak</p>
@@ -117,12 +121,12 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item link">
                 <div class="card">
                     <img class="card-img-top" src="food_stock_image.jpg" alt="Card image cap">
                     <div class="card-body">
                         <img src="chef_stock_photo.JPG" alt="Generic placeholder image"
-                        class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
+                            class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
                         <h5 class="card-title">Monica</h5>
                         <h5 class="pricing">$50/hr</h5>
                         <div class="ratings">
@@ -130,7 +134,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>    
+                            <span class="fa fa-star"></span>
                         </div>
                         <p class="card-text card-text-one">Cuisine: Mexican</p>
                         <p class="card-text">Signature Dish: Carne Asada Tacos</p>
@@ -139,12 +143,12 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item link">
                 <div class="card">
                     <img class="card-img-top italian-food-img" src="italian_food_stock_image.png" alt="Card image cap">
                     <div class="card-body">
                         <img src="chef_stock_photo.JPG" alt="Generic placeholder image"
-                        class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
+                            class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
                         <h5 class="card-title">Geovanni</h5>
                         <h5 class="pricing">$50/hr</h5>
                         <div class="ratings">
@@ -152,7 +156,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>    
+                            <span class="fa fa-star"></span>
                         </div>
                         <p class="card-text card-text-one">Cuisine: Italian</p>
                         <p class="card-text">Signature Dish: Fettucine Alfredo</p>
@@ -161,12 +165,12 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item link">
                 <div class="card">
                     <img class="card-img-top" src="food_stock_image.jpg" alt="Card image cap">
                     <div class="card-body">
                         <img src="chef_stock_photo.JPG" alt="Generic placeholder image"
-                        class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
+                            class="img-fluid rounded-circle border border-dark border-3 chef-stock-image">
                         <h5 class="card-title">Lee</h5>
                         <h5 class="pricing">$50/hr</h5>
                         <div class="ratings">
@@ -174,7 +178,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>    
+                            <span class="fa fa-star checked"></span>
                         </div>
                         <p class="card-text card-text-one">Cuisine: Indian</p>
                         <p class="card-text">Signature Dishes: Butter Chicken, etc.</p>
@@ -199,17 +203,15 @@
         <ul class="nav justify-content-around footer-nav" id="navBar">
             <li class="nav-item">
                 <div class="navItemCard">
-                    <a class="nav-link active" href="#"><i class="fa-sharp fa-solid fa-house fa-2xl" id="navIcon"></i></a>
+                    <a class="nav-link active" href="index.html"><i class="fa fa-arrow-circle-o-left fa-2x" id="navIcon"></i></a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="bookings.html"><i class="fa-solid fa-book fa-2xl"></i></a>
+                <a class="nav-link" href="index.html"><i class="fa-sharp fa-solid fa-house fa-2xl"></i></a>
+            </li>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-gear fa-2xl"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="profile.html"><i class="fa-solid fa-user fa-2xl"></i></a>
+                <a class="nav-link" href="profile_page.html"><i class="fa-solid fa-user fa-2xl"></i></a>
             </li>
         </ul>
     </div>
