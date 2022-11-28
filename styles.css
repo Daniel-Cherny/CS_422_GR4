@@ -91,13 +91,12 @@ header {
 
 .caramel {
     color: RGB(255,213,154);
-    background-color: #7c7f86;
+    background-color: #542a16;
 }
 
-@media (min-width: 768px) {
-    .card {
-        width: 40%;
-        margin: auto;
-        margin-top: 15rem;
-    }
+#navBar {
+    margin-top: 10vh;
+    background-color: white;
+    opacity: 0.9;
+    padding: 2.5vh 0 3.5vh 0;
 }
