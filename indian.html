@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeChef</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   
+
+    <script src="https://kit.fontawesome.com/e78db3f672.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="search-box">
+
+            <div class="input-group">
+                <button class="btn btn-secondary" type="button" id="button-addon1"><i
+                        class="fa fa-map-marker"></i></button>
+                <input type="text" class="form-control" placeholder="Chicago,IL">
+            </div>
+        </div>
+    </header>
+    <br>
+
+   
+
+          <style>
+          /* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+	background-color: rgb(75, 75, 89);
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+    z-index:100;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+	background-color: #04AA6D;
+	color: white;
+  }
+
+          </style>
+
+   
+    <div class=" d-flex justify-content-center  h-100">
+        <div class="col col-lg-9 col-xl-9">
+            <div class="card">
+                <div class="rounded-top text-white d-flex flex-row"
+                    style="background-color: rgb(63, 65, 71); height:120px;">
+                    <div class=" d-flex flex-column" style="width: 150px; margin-left: 0px;">
+                        <img src="images/profile.JPG" alt="Generic placeholder image" class="img-fluid img-thumbnail mt-1 mb-2 priyanka"
+                            style="width: 100px; z-index: 1">
+                           
+                    </div>
+                    <div class="ms-1" style="margin-top: 50px;">
+                        <h5><i class="far fa-user me-1"></i>Raj</h5>    
+                    </div>
+            
+                    
+
+                </div>
+                <div class="p-1 text-black" style="background-color: #f5f7fa;">
+                    <div class="d-flex justify-content-center  py-1">
+                        <div>
+                            <h8><i class="far fa-star "></i>5</h8>
+                        </div>
+                        <div class="px-3">
+                            <h8><i class="far fa-dollar me-0"></i>90/hr</h8>
+                        </div>
+                        <div>
+                            <h8><i class="fa fa-map-marker" aria-hidden="true"></i> Chicago  </h8>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="card-body p-1 text-black about-container">
+                    <div class="mb-0.5">
+                        <p class="lead mb-2 about" style="font-weight:bold">Cuisine</p>
+                        <div class="p-0 justify-content-center" style="background-color: #f5f7fa;">
+                            <p class="font-italic mb-0.5">Indian</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body p-1 text-black about-container">
+                    <div class="mb-0.5">
+                        <p class="lead mb-2 about" style="font-weight:bold">About</p>
+                        <div class="p-0 justify-content-center" style="background-color: #f5f7fa;">
+                            <p class="font-italic mb-0.5">I am Raj from Chicago and my specialities are Butter Chicken, Dosas
+                                etc etc.</p>
+    
+                        </div>
+                    </div>
+                </div>
+                    
+                    <div class="mb-1">
+                        <p class="lead  mb-0 bold" style="font-weight:bold">Recent photos</p>
+                    </div>
+                    <div class="  raj" style="background-color: #f5f7fa;">
+                    <div class="row g-2">
+                        <div class="col mb-0 ">
+                            <img src="images/food_stock_image.jpg" 
+                                class="w-100 rounded-1">
+                        </div>
+                        <div class="col mb-2">
+                            <img src="images/food_stock_image.jpg" 
+                                class="w-100 rounded-1">
+                        </div>
+                            <div class="col">
+                                <img src="images/food_stock_image.jpg" 
+                                    class="w-100 rounded-1">
+                            </div>
+                        
+                        
+                    </div>
+                </div>
+                <p class="lead mb-0 about" style="font-weight:bold">Reviews</p>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"></li>
+                            <li class="list-group-item"><i class="far fa-user me-1"></i>Samantha: &nbsp; Great food and Professional Chef</li>
+                            <li class="list-group-item"><i class="far fa-user me-1"></i>Review 2</li>
+                            <li class="list-group-item"><i class="far fa-user me-1"></i>Review 3</li>
+                        </ul>
+                    </div>
+
+                    <a href="date_time.html?name=Raj&cuisine=Indian" type="button" class="btn btn-success btn-rounded btn-lg">
+                        BOOK
+                      </a>
+                   
+                
+            </div>
+        </div>
+    </div>
+    <div>
+        <ul class="nav justify-content-around footer-nav" id="navBar">
+            <li class="nav-item">
+                <div class="navItemCard">
+                    <a class="nav-link active" href="index.html"><i class="fa fa-arrow-circle-o-left fa-2x" id="navIcon"></i></a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fa-sharp fa-solid fa-house fa-2xl"></i></a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chef_view.html"><i class="fa-solid fa-user fa-2xl"></i></a>
+            </li>
+        </ul>
+    </div>
+
+   
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

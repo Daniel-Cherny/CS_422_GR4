@@ -39,9 +39,24 @@
         $('#datepicker').datepicker();
     });
 
-    document.getElementById("focusButton").addEventListener("click", () => {
-    document.getElementById("myTextField").focus();
-});
+    //document.getElementById("focusButton").addEventListener("click", () => {
+    //document.getElementById("myTextField").focus();
+
+
+    
+
+//});
+
+const urlParams = new URLSearchParams(window.location.search);
+const name = urlParams.get('name');
+const cuisine = urlParams.get('cuisine');
+
+function hrefWithData(){
+    var date_value = document.getElementById('datepicker').value;
+    var time_value = document.getElementById('appt').value;
+    var diet_rest = document.getElementById('comments').value;
+    window.location.href = 'confirmation_page.html?name='+name+'&cuisine='+cuisine+'&date='+date_value+'&time='+time_value+'&diet='+diet_rest;
+}
 
 </script>
 
@@ -90,7 +105,7 @@
             <br>
         </div>
         <div class="flex-child">
-            <a href="confirmation_page.html" class="btn btn-primary confirmation-button">Confirm!</a>
+            <a href="javascript:hrefWithData()" class="btn btn-primary confirmation-button">Confirm!</a>
         </div>
     </main>
 

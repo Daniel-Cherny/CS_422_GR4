@@ -24,6 +24,8 @@
 
 </head>
 
+
+
 <body>
 
     <header>
@@ -95,26 +97,27 @@
     <div class="container">
       <div class="justify-content-center align-items-center">
        
-          <div class="card  style="border-color: #8f837c ;">
+          <div class="card  style="border-color: #8f837c ;>
             <div class="card-body p-5">
   
-              <p class="lead fw-bold mb-1" style="color: #131212;">Confirmation</p>
+              <p class="d-flex lead fw-bold mb-1" style="color: #131212;">Confirmation</p>
               <div class="row">
-                <div class="col mb-3">
-                <p class="small text-muted mb-1"><i class="fa-sharp fa-solid fa-user" ></i> Chef</p>
-                <p>Raj</p>
-                  <p class="small text-muted mb-1"><i class="fa-sharp fa-solid fa-calendar" ></i> Date</p>
-                  <p>15th November 2022</p>
-                  <p class="small text-muted mb-1"><i class="fa-sharp fa-solid fa-clock" ></i> Time</p>
-                  <p>8 pm</p>
-                  <p class="small text-muted mb-1"><i class="fa-sharp fa-solid fa-map-marker"></i> Location</p>
-                  <p>Chicago,IL</p>
-                  <p class="small text-muted mb-1"><i class="fa-solid fa-utensils"></i> Cuisine</p>
-                  <p>Indian</p> 
+                
+                  
+                  
+                  <p class="small text-muted mb-1"><i class="fa-sharp fa-solid fa-user" ></i> Chef</p>
+                  <p><label id="name"></label></p>
+                    <p class="small text-muted mb-1"><i class="fa-sharp fa-solid fa-calendar" ></i> Date</p>
+                    <p><label id="date"></label></p>
+                    <p class="small text-muted mb-1"><i class="fa-sharp fa-solid fa-clock" ></i> Time</p>
+                    <p><label id="time"></label></p>
+                    <p class="small text-muted mb-1"><i class="fa-solid fa-utensils"></i> Cuisine</p>
+                    <p><label id="cuisine"></label></p> 
+                    <p class="small text-muted mb-1"><i class="fa-solid fa-utensils"></i> Diet</p>
+                    <p><label id="diet"></label></p>
                 </div>
               </div>
-
-              <p class="lead fw-bold mb-4 pb-2" style="color: #17162f;">Thank you. You will be notified when the chef confirms</p>
+              <p class="lead fw-bold mb-4 pb-2" style="color: #373744;">Thank you. You will be notified when the chef confirms</p>
             </div>
           </div>
         </div>
@@ -132,6 +135,18 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get('name');
+      const cuisine = urlParams.get('cuisine');
+      const date_value = urlParams.get('date');
+      const time_value = urlParams.get('time');
+      const diet_rest = urlParams.get('diet');
+      document.getElementById('name').innerHTML=name;
+      document.getElementById('date').innerHTML=date_value;
+      document.getElementById('time').innerHTML=time_value;
+      document.getElementById('cuisine').innerHTML=cuisine;
+      document.getElementById('diet').innerHTML=diet_rest;
+    </script>
 </body>
-
-</html>
+  }
