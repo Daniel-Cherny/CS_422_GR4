@@ -35,8 +35,15 @@ header {
     text-decoration: underline;
 }
 
-.flex-time, .flex-date {
+.flex-time{
     justify-content: space-evenly;
+    width: 410px;
+}
+ .flex-date {
+    justify-content: space-evenly;
+    
+    
+  
 }
 
 input, textarea {

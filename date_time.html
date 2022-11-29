@@ -66,12 +66,7 @@ function hrefWithData(){
 <body>
     <header>
         <div class="search-box">
-            <div class="input-group">
-                <button class="btn btn-secondary" type="button" id="button-addon1"><i
-                        class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-
+            
             <div class="input-group">
                 <button class="btn btn-secondary" type="button" id="button-addon1"><i
                         class="fa fa-map-marker"></i></button>
@@ -87,13 +82,12 @@ function hrefWithData(){
 
         <div class="flex-child flex-date">
             <h3>Date:</h3>
-            <input type="text" id="datepicker">
+            <input style = "width: 180px;height: 40px;" type="text" id="datepicker">
         </div>
 
-        <div class="flex-child flex-time">
-            <h3>Time:</h3>
-            <input type="time" id="appt" name="appt"
-                   min="09:00" max="18:00" required>
+        <div class="flex-child flex-time ">
+            <h3 >Time:</h3>
+            <input  style = "width: 180px;height: 40px;"type="time" id="appt" name="appt" min="09:00" max="18:00" >
         </div>
         
         <div class="flex-child">
@@ -105,7 +99,7 @@ function hrefWithData(){
             <br>
         </div>
         <div class="flex-child">
-            <a href="javascript:hrefWithData()" class="btn btn-primary confirmation-button">Confirm!</a>
+            <a href="javascript:hrefWithData()" class="btn btn-primary confirmation-button" style="height: 50px;text-align: center;vertical-align:middle">Confirm!</a>
         </div>
     </main>
 

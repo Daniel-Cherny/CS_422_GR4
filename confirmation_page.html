@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="profile_page.css">
+    
     <script src="https://kit.fontawesome.com/e78db3f672.js" crossorigin="anonymous"></script>
     
 
@@ -30,16 +30,11 @@
 
     <header>
         <div class="search-box">
-            <div class="input-group">
-                <button class="btn btn-secondary" type="button" id="button-addon1"><i
-                        class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-
+            
             <div class="input-group">
                 <button class="btn btn-secondary" type="button" id="button-addon1"><i
                         class="fa fa-map-marker"></i></button>
-                <input type="text" class="form-control" placeholder="Search">
+                <input type="text" class="form-control" placeholder="Chicago,">
             </div>
         </div>
     </header>
@@ -55,42 +50,6 @@
 
           
           </div>
-
-          <style>
-          /* Place the navbar at the bottom of the page, and make it stick */
-.navbar {
-	background-color: rgb(75, 75, 89);
-	overflow: hidden;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-    z-index:100;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .navbar a {
-	float: left;
-	display: block;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .navbar a:hover {
-	background-color: #ddd;
-	color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .navbar a.active {
-	background-color: #04AA6D;
-	color: white;
-  }
-
-          </style>
 
 
 <section class="h-100 " style="background-color: #eee;">
@@ -117,7 +76,7 @@
                     <p><label id="diet"></label></p>
                 </div>
               </div>
-              <p class="lead fw-bold mb-4 pb-2" style="color: #373744;">Thank you. You will be notified when the chef confirms</p>
+              <p class="lead fw-bold mb-4 pb-2" style="color: #17162f;">Thank you. You will be notified when the chef confirms</p>
             </div>
           </div>
         </div>
@@ -148,5 +107,23 @@
       document.getElementById('cuisine').innerHTML=cuisine;
       document.getElementById('diet').innerHTML=diet_rest;
     </script>
+
+<div>
+  <ul class="nav justify-content-around footer-nav" id="navBar">
+      <li class="nav-item">
+          <div class="navItemCard">
+              <a class="nav-link active" href="index.html"><i class="fa fa-arrow-circle-o-left fa-2x" id="navIcon"></i></a>
+          </div>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fa-sharp fa-solid fa-house fa-2xl"></i></a>
+      </li>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="chef_view.html"><i class="fa-solid fa-user fa-2xl"></i></a>
+      </li>
+  </ul>
+</div>
+
 </body>
   }
